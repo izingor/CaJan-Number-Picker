@@ -1,0 +1,112 @@
+body {
+    align-content: center;
+    font-size: 35px;
+    font-family: 'Staatliches', cursive;
+    background-color: #000957;
+}
+
+.btn {
+    display: flex;
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    color: #ebe645;
+    background-color: #577bc1;
+    border-radius: 14px;
+    line-height: 50px;
+    vertical-align: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #344cb7;
+}
+
+.msg {
+    top: 8%;
+    position: absolute;
+    font-size: 45px;
+    height: 75px;
+    width: 200px;
+    background-color: #000957;
+    text-align: center;
+    color: #ebe645;
+    justify-content: center;
+}
+
+.board td {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 20%;
+    background-color: #577bc1;
+    color: white;
+}
+
+.board td:hover {
+    background-color: #344cb7;
+}
+
+.clicked {
+    animation-name: disappear;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+    50% {
+        background-color: #ebe645;
+        border-radius: 50%;
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0%;
+    }
+}
+
+.timer {
+    position: absolute;
+    top: 15%;
+    width: 170px;
+    height: 70px;
+    background-color: #000957;
+    font-size: 40px;
+    color: #ebe645;
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    background-color: #000957;
+    width: 1000px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.table-container {
+    top: 30%;
+    position: absolute;
+    display: table-cell;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000957;
+}
+
+.hide {
+    display: none;
+}
