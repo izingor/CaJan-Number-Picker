@@ -1,46 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Number Picker</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minesweeper</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+	<body>
+		<div class="container">
+			<div class="msg"></div>
+			<div onclick="init()" class="btn">Start</div>
 
-<body onload="init()">
+			<div class="timer"></div>
+			<div class="table-container">
+				<table class="board"></table>
+			</div>
+		</div>
 
-    <div class="main-container" oncontextmenu="return false">
-        <div class="headline">MineSweeper</div>
-        <div class="lives">
-            <div class="life-1">💚</div>
-            <div class="life-2">💚</div>
-            <div class="life-3">💚</div>
-        </div>
-        <div class="score">
-            <div onclick="restart()" class="smiley">🤠</div>
-            <div class="timer">0</div>
-            <div class="marked">0</div>
-        </div>
-        <div class="difficulty">
-            <div id="one" class="diff diff1" onclick="difficulty(this)">EASY</div>
-            <div id="two" class="diff diff2" onclick="difficulty(this)">MEDIUM</div>
-            <div id="three" class="diff diff3" onclick="difficulty(this)">HARD</div>
-        </div>
-        <div class="msg hide">GAME OVER</div>
-        <div class="board">
-        </div>
-
-    </div>
-
-
-
-
-
-    <script src="js/utils.js"></script>
-    <script src="js/app.js"></script>
-</body>
-
+		<script src="js/app.js"></script>
+	</body>
 </html>
